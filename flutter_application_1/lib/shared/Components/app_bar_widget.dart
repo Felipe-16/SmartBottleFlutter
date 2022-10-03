@@ -23,10 +23,13 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
           Container(
             child: Icon(icon),
           ),
-          Container(
-            child: Text(
-              titulo,
-              style: TextStyle(fontSize: 36),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Container(
+              child: Text(
+                titulo,
+                style: TextStyle(fontSize: 32),
+              ),
             ),
           ),
         ],
