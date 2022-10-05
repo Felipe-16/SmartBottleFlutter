@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static final brandingBlue = Color(0xFF022893);
+  static final BackBlue = Color.fromARGB(255, 15, 104, 221);
   static final lightBlue = Color(0xFF025AC8);
   static final background = Color(0xFFFFFFFF);
   static final generalLetter = Color(0xFF151A27);
   static final lightLetter = Color(0xFF494950);
-  static final shape = Color(0xFFE1E1E5);
+  static final shape = Color.fromARGB(255, 163, 167, 172);
   static final white = Colors.white;
 
   static final BoxShadow clickShadow = BoxShadow(
