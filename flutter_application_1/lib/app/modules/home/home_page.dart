@@ -24,8 +24,8 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Center(child: ContainerNameWidget(name: 'Mesas Ativas')),
+                padding: const EdgeInsets.fromLTRB(8, 24, 8, 16),
+                child: Center(child: ContainerNameWidget(name: 'Mesas Ativas', cor: Color.fromARGB(255, 44, 180, 78),)),
               ),
               Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -34,21 +34,47 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                           const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: 3,
                               crossAxisSpacing: 16,
-                              mainAxisSpacing: 40),
+                              mainAxisSpacing: 16,
+                              childAspectRatio: 3.1/2
+                              ),
                       physics: NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
                       itemCount: controller.listaMesas.length,
                       itemBuilder: (context, index) {
                         return MesaConatainerWidget(
+                          opacidade: 1,
                           numeroMesa: controller.listaMesas[index].numero,
                           notificacao: controller.listaMesas[index].notificacao,
-                          onTap: () {
-                            Modular.to.pushNamed('/home/mesa',
-                                arguments: controller.listaMesas[index]);
-                          },
+                          status: controller.listaMesas[index].ativa,
                         );
                       }),
-                );
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(child: ContainerNameWidget(name: 'Mesas Inativas', cor: Color.fromARGB(255, 201, 39, 39),)),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: GridView.builder(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 3,
+                              crossAxisSpacing: 16,
+                              mainAxisSpacing: 16,
+                              childAspectRatio: 3.1/2
+                              ),
+                      physics: NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemCount: controller.listaMesas.length,
+                      itemBuilder: (context, index) {
+                        return MesaConatainerWidget(
+                          opacidade: 0.5,
+                          numeroMesa: controller.listaMesas[index].numero,
+                          notificacao: '0',
+                          status: controller.listaMesas[index].ativa,
+                        );
+                      }),
+                ),
             ],
           ),
         ));

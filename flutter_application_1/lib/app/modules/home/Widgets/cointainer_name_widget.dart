@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/shared/Themes/app_colors.dart';
 import 'package:flutter_application_1/shared/Themes/app_text.dart';
 
-
 class ContainerNameWidget extends StatelessWidget {
   final String name;
+  final Color? cor;
 
   const ContainerNameWidget({
     Key? key,
     required this.name,
+    this.cor,
   }) : super(key: key);
 
   @override
@@ -16,7 +17,7 @@ class ContainerNameWidget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         boxShadow: [AppColors.clickShadow],
-        color: Color.fromRGBO(2, 90, 203, 1),
+        color: cor,
         borderRadius: BorderRadius.circular(10),
       ),
       width: MediaQuery.of(context).size.width * 1,
