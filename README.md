@@ -27,14 +27,12 @@ Nessa parte foi direcionado a interface gráfica do raspberry PI que contara com
 
 
 ## Peça 3d:
-- Para compactar e deixar a mostra o raspberry com o display lcd, foi pego um projeto 3d já realizado por um usuário no thingverse para focar na realização do software
-- Link do projeto: https://www.thingiverse.com/thing:1503651/makes
+- Foi realizado a montagem da peca por um software 3d
 
-### Foto do slicer do modelo 3d:
-![image](https://user-images.githubusercontent.com/56928106/193975420-afd02b39-9439-4ed0-b45a-9ab5e1e59404.png)
 
-### Foto de uma das peças impressas:
-![WhatsApp Image 2022-10-05 at 00 30 58](https://user-images.githubusercontent.com/56928106/193975534-a98de765-79c3-41dc-8ba5-27a9aaead934.jpeg)
+### Fotos da peça impressa:
+![IMG_0C0794B31776-1](https://user-images.githubusercontent.com/56928106/200942897-264ea854-e7e3-494b-8ffb-dd81fa63c7c1.jpeg)
+
 
 
 ## Colaboradores:
