@@ -29,9 +29,18 @@ Nessa parte foi direcionado a interface gráfica do raspberry PI que contara com
 ## Peça 3d:
 - Foi realizado a montagem da peca por um software 3d
 
+### Video do modelo
+https://user-images.githubusercontent.com/56928106/200943322-8967d341-49f8-4bd9-8e5e-4a811739408c.MP4
+
 
 ### Fotos da peça impressa:
 ![IMG_0C0794B31776-1](https://user-images.githubusercontent.com/56928106/200942897-264ea854-e7e3-494b-8ffb-dd81fa63c7c1.jpeg)
+
+![IMG_3743](https://user-images.githubusercontent.com/56928106/200943647-28fd47a7-1464-4924-a783-ed8c4e8516ff.jpg)
+
+![IMG_0BD14B139C8D-1](https://user-images.githubusercontent.com/56928106/200943731-ec56b275-2b0a-4633-8441-897003ad49da.jpeg)
+
+
 
 
 
